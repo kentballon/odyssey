@@ -1,5 +1,5 @@
 ---
-title: "Best way to learn code is to break it"
+title: "Best way to learn code is to break it, right?"
 number: 1
 author: "Kent Ballon"
 state: "published"

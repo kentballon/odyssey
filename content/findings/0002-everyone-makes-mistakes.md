@@ -1,5 +1,5 @@
 ---
-title: "Everyone makes mistakes"
+title: "Everyone makes mistakes."
 number: 2
 author: "Kent Ballon"
 state: "published"
