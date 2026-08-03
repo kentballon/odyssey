@@ -25,7 +25,7 @@ To add on top of that, they were heavily using [GitLab Geo](https://docs.gitlab.
 
 ![GitLab Geo](https://docs.gitlab.com/administration/geo/img/geo_architecture_v13_8.png "GitLab Geo")
 
-It took us 3 months to iron out their options, and assisted them prepare and validate their migration plans that management can vouch for (yes, we actually helped them with their internal docs). We answered 50+ detailed questions from the team and management.
+For this marathon we helped them migrate to a supported architecture. It took us 3 months to iron out their options, and assisted them prepare and validate their migration plans that management can vouch for (yes, we actually helped them with their internal docs). We answered 50+ detailed questions from the team and management.
 
 It then took us another 3 months of having close guidance for all activities (that's us having weekly calls to go through the steps ensuring nothing will break). I'd like to think being stubborn enough to endure such cases made me better.
 
