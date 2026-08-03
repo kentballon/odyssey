@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Findings"
+title = "odyssey"
 enableRobotsTXT = true
 
 # Needed so relative links / assets work correctly when the site is served
@@ -10,7 +10,7 @@ relativeURLs = true
 [params]
   # Shown in the header next to the site title
   tagline = "a running log of technical findings"
-  author  = "Kent"
+  author  = "Kent Ballon"
 
 [markup]
   [markup.goldmark]
