@@ -21,10 +21,10 @@ in this feature.
 The Auditor Role is meant to give a user read-only visibility across an 
 instance for compliance purposes, without granting the ability to make 
 changes the way an administrator account can. In practice, several corners
-of the codebase hadn't fully caught up to that intent: some views and 
-permission checks still treated auditor users inconsistently, 
-which meant the role didn't always behave the way compliance-focused 
-customers expected.
+of the [codebase](https://gitlab.com/groups/gitlab-org/-/work_items/7469) 
+hadn't fully caught up to that intent: some views and permission checks 
+still treated auditor users inconsistently, which meant the role didn't 
+always behave the way compliance-focused customers expected.
 
 ## Details
 
@@ -32,13 +32,13 @@ I picked up a series of related issues and worked through them individually,
 several with pairing sessions to validate the right fix and get it reviewed 
 efficiently:
 
-- gitlab.com/gitlab-org/gitlab/-/issues/357328
-- gitlab.com/gitlab-org/gitlab/-/issues/355528
-- gitlab.com/gitlab-org/gitlab/-/issues/355500
-- gitlab.com/gitlab-org/gitlab/-/issues/354579
-- gitlab.com/gitlab-org/gitlab/-/issues/354577
-- gitlab.com/gitlab-org/gitlab/-/issues/367520
-- gitlab.com/gitlab-org/gitlab/-/issues/368089
+- [Auditors cannot see group CI/CD (Runners)](gitlab.com/gitlab-org/gitlab/-/issues/357328)
+- [Auditor cannot view CI/CD analytics](gitlab.com/gitlab-org/gitlab/-/issues/355528)
+- [Auditor cannot see group compliance reports](gitlab.com/gitlab-org/gitlab/-/issues/355500)
+- [Auditor cannot view Container Registry at group level](gitlab.com/gitlab-org/gitlab/-/issues/354579)
+- [Auditor cannot see group wiki](gitlab.com/gitlab-org/gitlab/-/issues/354577)
+- [Follow-up from "Add auditor access for group runners" (Hide register a runner button)](gitlab.com/gitlab-org/gitlab/-/issues/367520)
+- [[Feature flag] Enable Auditor Access to Group Runners](gitlab.com/gitlab-org/gitlab/-/issues/368089)
 
 Each of these addressed a specific behavioral gap between what an auditor
 account could see or do versus what it was supposed to be scoped to. 
@@ -56,6 +56,7 @@ The work shipped as part of [GitLab 15.5](about.gitlab.com/releases/2022/10/22/g
 ## References
 
 - [Auditor users documentation](https://docs.gitlab.com/administration/auditor_users/)
+- [Ensure Auditor permissions in UI follow docs](https://gitlab.com/groups/gitlab-org/-/work_items/7469)
 - [GitLab 15.5 release post](about.gitlab.com/releases/2022/10/22/gitlab-15-5-released)
 - gitlab.com/gitlab-org/gitlab/-/issues/357328
 - gitlab.com/gitlab-org/gitlab/-/issues/355528
