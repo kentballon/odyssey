@@ -42,6 +42,6 @@ second and third occurrence were routine instead of another fire drill.
 
 ## References
 
-- [git fetch fails .netrc parse with libcurl 8.11.0]https://github.com/curl/curl/issues/15496
+- [git fetch fails .netrc parse with libcurl 8.11.0](https://github.com/curl/curl/issues/15496)
 - [Encountering .netrc parse error while running CI/CD pipeline](https://support.gitlab.com/hc/en-us/articles/16782319936540-Encountering-netrc-parse-error-while-running-CI-CD-pipeline)
 - [Added netrc parse error workaround](https://gitlab.com/gitlab-com/support/support-pages/-/merge_requests/76/diffs)
