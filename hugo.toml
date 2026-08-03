@@ -3,10 +3,6 @@ languageCode = "en-us"
 title = "odyssey"
 enableRobotsTXT = true
 
-# Needed so relative links / assets work correctly when the site is served
-# from a GitHub Pages project subpath, e.g. https://<user>.github.io/<repo>/
-relativeURLs = true
-
 [params]
   # Shown in the header next to the site title
   tagline = "a running log of technical findings"

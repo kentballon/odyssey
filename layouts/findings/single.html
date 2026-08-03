@@ -4,7 +4,7 @@
 <article class="finding">
 
   <div class="finding-eyebrow">
-    <a href="{{ "/" | relURL }}">Findings</a> / FD {{ printf "%04d" (int .Params.number) }}
+    <a href="{{ .Site.Home.RelPermalink }}">Findings</a> / FD {{ printf "%04d" (int .Params.number) }}
   </div>
 
   <h1 class="finding-title">{{ .Title }}</h1>

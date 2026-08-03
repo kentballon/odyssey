@@ -12,9 +12,9 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="site-home" href="{{ "/" | relURL }}">/</a>
+      <a class="site-home" href="{{ .Site.Home.RelPermalink }}">/</a>
       <div class="site-title-block">
-        <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <a class="site-title" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
         <span class="site-tagline">{{ .Site.Params.tagline }}</span>
       </div>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
