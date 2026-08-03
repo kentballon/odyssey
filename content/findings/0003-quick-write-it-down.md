@@ -3,7 +3,7 @@ title: "Quick, write it down!"
 number: 3
 author: "Kent Ballon"
 state: "published"
-date: 2024-11-7
+date: 2024-11-07
 tags: ["knowledge","documentation"]
 ---
 
