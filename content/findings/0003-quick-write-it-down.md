@@ -13,6 +13,8 @@ As part of formalizing GitLab's [Knowledge Base](https://gitlab.com/gitlab-com/s
 I joined the team that spearheaded this initiative and helped write articles for 
 emerging customer issues that were not yet covered by our existing documentation.
 
+![Knowledge Base](https://handbook.gitlab.com/images/support/assets/km_graphic.jpg)
+
 ## Context
 
 While our troubleshooting documentations covers some of the older gotchas, 

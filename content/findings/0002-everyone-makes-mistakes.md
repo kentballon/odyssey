@@ -49,7 +49,7 @@ classification and the fact that customers were actively using the original scop
 statement to judge their own exposure. We escalated internally and coordinated with 
 the relevant stakeholders to get the security blog post corrected:
 
-- [Add clarity around impact of LDAP users in 16-7 blog post](gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/132419)
+- [Add clarity around impact of LDAP users in 16-7 blog post](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/132419)
 
 Because of the security classification, getting the scope right mattered more than 
 getting it out fast, and prioritizing the correction meant customers relying on 
@@ -61,4 +61,4 @@ where an inaccurate scope statement is its own kind of risk.
 ## References
 
 - [16.7.2 critical security release](https://about.gitlab.com/releases/2024/01/11/critical-security-release-gitlab-16-7-2-released/)
-- [Add clarity around impact of LDAP users in 16-7 blog post](gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/132419)
+- [Add clarity around impact of LDAP users in 16-7 blog post](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/132419)
