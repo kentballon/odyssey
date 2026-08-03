@@ -29,9 +29,9 @@ always behave the way compliance-focused customers expected.
 
 ## Details
 
-I sifted through a series of related issues and worked through them individually, 
-several with pairing sessions to validate the right fix and get it reviewed 
-efficiently:
+I sifted through a series of related issues and worked through them, 
+holding pairing sessions with other engineers to validate the right fix and 
+get it reviewed accordingly:
 
 - [Auditors cannot see group CI/CD (Runners)](https://gitlab.com/gitlab-org/gitlab/-/issues/357328)
 - [Auditor cannot view CI/CD analytics](https://gitlab.com/gitlab-org/gitlab/-/issues/355528)
