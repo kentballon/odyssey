@@ -13,7 +13,8 @@ I took the lead in expanding a potentially large customer for GitLab. They were 
 
 ## Context
 
-For this engagement, we recognized the pain points of the customer and tried to understand their constraints for their deployments. We've established an agreement of what they envisioned the future would be and explicitly pointed out the areas where we can help with. For what it's worth, it definitely felt like crossing a mountain.
+For this engagement, we recognized the pain points of the customer and tried to understand their own constraints for their deployments. 
+We've established an agreement of what they envisioned the future would be and explicitly pointed out the areas where we can help with. For what it's worth, it definitely felt like crossing a mountain.
 
 ## Details
 
