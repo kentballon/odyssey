@@ -1,0 +1,53 @@
+{{ define "title" }}{{ printf "FD %04d" (int .Params.number) }} &mdash; {{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<article class="finding">
+
+  <div class="finding-eyebrow">
+    <a href="{{ "/" | relURL }}">Findings</a> / FD {{ printf "%04d" (int .Params.number) }}
+  </div>
+
+  <h1 class="finding-title">{{ .Title }}</h1>
+
+  <aside class="finding-meta">
+    <dl>
+      <div class="meta-row">
+        <dt>State</dt>
+        <dd><span class="badge badge-{{ .Params.state | default "notes" }}">{{ .Params.state | default "notes" }}</span></dd>
+      </div>
+      <div class="meta-row">
+        <dt>FD</dt>
+        <dd>{{ printf "%04d" (int .Params.number) }}</dd>
+      </div>
+      {{ with .Params.author }}
+      <div class="meta-row">
+        <dt>Author</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+      <div class="meta-row">
+        <dt>Updated</dt>
+        <dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time></dd>
+      </div>
+      {{ with .GetTerms "tags" }}
+      <div class="meta-row">
+        <dt>Tags</dt>
+        <dd>{{ range . }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+  </aside>
+
+  {{ if .TableOfContents }}
+  <nav class="finding-toc">
+    <div class="finding-toc-label">Table of Contents</div>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
+
+  <div class="finding-body">
+    {{ .Content }}
+  </div>
+
+</article>
+{{ end }}

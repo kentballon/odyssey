@@ -1,0 +1,27 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Findings"
+enableRobotsTXT = true
+
+# Needed so relative links / assets work correctly when the site is served
+# from a GitHub Pages project subpath, e.g. https://<user>.github.io/<repo>/
+relativeURLs = true
+
+[params]
+  # Shown in the header next to the site title
+  tagline = "a running log of technical findings"
+  author  = "Kent"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[[menu.main]]
+  name = "All Findings"
+  url  = "/"
+  weight = 1

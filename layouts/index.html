@@ -1,0 +1,48 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="index-page">
+  <p class="index-intro">
+    A running collection of technical findings, write-ups, and post-incident notes
+    from day-to-day support and infrastructure work &mdash; Git internals, distributed
+    systems, CI/CD, and whatever else turns out to be worth writing down.
+  </p>
+
+  {{ $findings := where .Site.RegularPages "Type" "findings" }}
+  {{ $findings = $findings.ByParam "number" }}
+
+  {{ $states := slice }}
+  {{ range $findings }}
+    {{ $states = $states | append .Params.state }}
+  {{ end }}
+
+  <table class="index-table">
+    <thead>
+      <tr>
+        <th class="col-num">No.</th>
+        <th class="col-title">Title</th>
+        <th class="col-state">State</th>
+        <th class="col-tags">Tags</th>
+        <th class="col-updated">Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $findings.Reverse }}
+      <tr>
+        <td class="col-num"><a href="{{ .RelPermalink }}">{{ printf "%04d" (int .Params.number) }}</a></td>
+        <td class="col-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td class="col-state"><span class="badge badge-{{ .Params.state | default "notes" }}">{{ .Params.state | default "notes" }}</span></td>
+        <td class="col-tags">
+          {{ range .GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+        </td>
+        <td class="col-updated"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006-01-02" }}</time></td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  {{ if eq (len $findings) 0 }}
+  <p class="index-empty">No findings yet &mdash; add a Markdown file under <code>content/findings/</code> to get started.</p>
+  {{ end }}
+</div>
+{{ end }}

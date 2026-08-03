@@ -1,0 +1,27 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="index-page">
+  <p class="index-intro">Findings tagged <strong>{{ .Title }}</strong>.</p>
+  <table class="index-table">
+    <thead>
+      <tr>
+        <th class="col-num">No.</th>
+        <th class="col-title">Title</th>
+        <th class="col-state">State</th>
+        <th class="col-updated">Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range (.Pages.ByParam "number").Reverse }}
+      <tr>
+        <td class="col-num"><a href="{{ .RelPermalink }}">{{ printf "%04d" (int .Params.number) }}</a></td>
+        <td class="col-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td class="col-state"><span class="badge badge-{{ .Params.state | default "notes" }}">{{ .Params.state | default "notes" }}</span></td>
+        <td class="col-updated"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006-01-02" }}</time></td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.tagline }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-home" href="{{ "/" | relURL }}">/</a>
+      <div class="site-title-block">
+        <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <span class="site-tagline">{{ .Site.Params.tagline }}</span>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-toggle-dark">dark</span>
+        <span class="theme-toggle-sep">/</span>
+        <span class="theme-toggle-light">light</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>{{ .Site.Params.author }} &middot; personal technical findings</span>
+      <a href="https://rfd.shared.oxide.computer/" target="_blank" rel="noopener">theme inspired by Oxide RFDs</a>
+    </div>
+  </footer>
+
+  <script src="{{ "js/theme.js" | relURL }}"></script>
+</body>
+</html>
