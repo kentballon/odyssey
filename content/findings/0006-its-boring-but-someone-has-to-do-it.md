@@ -1,5 +1,5 @@
 ---
-title: "It's boring but someone has to do it."
+title: "It's boring but someone has to do it"
 number: 6
 author: "Kent Ballon"
 state: "published"

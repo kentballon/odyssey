@@ -1,5 +1,5 @@
 ---
-title: "Quick, write it down!"
+title: "Quick, write it down"
 number: 3
 author: "Kent Ballon"
 state: "published"

@@ -37,11 +37,14 @@ For on-call engineers, this gives them the ability to
 identify the correct groups and communication channels when triggering 
 developer escalations during customer emergencies.
 
-In this case I opted to create something deterministic instead of relying on "agents" to do the work. 
+In this case I opted to create something deterministic instead of relying on "agents" to do the work.
+I achieved this by stitching all publicly available information about the team and consolidating
+an index mapped to all relevant values.
+
 While I know there might be some negative connotations depending on which seat you reside in the industry, 
 I cannot discount the fact that the output has proved useful not only to the support team, 
 but even to our developers, CSMs, and marketing team. 
-It's a very trivial internal tool which just surfaces the team and developers responsible for any feature in GitLab.
+It's a very trivial tool which just surfaces the team and developers responsible for any feature in GitLab.
 
 ## References
 

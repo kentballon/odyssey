@@ -1,5 +1,5 @@
 ---
-title: "Houston, we have a problem."
+title: "Houston, we have a problem"
 number: 9
 author: "Kent Ballon"
 state: "published"

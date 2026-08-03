@@ -1,5 +1,5 @@
 ---
-title: "Attack with Magniture and Direction?"
+title: "Magnitude and Direction"
 number: 7
 author: "Kent Ballon"
 state: "published"

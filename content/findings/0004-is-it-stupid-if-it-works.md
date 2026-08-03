@@ -1,5 +1,5 @@
 ---
-title: "Is it stupid if it works?"
+title: "Is it stupid if it works"
 number: 4
 author: "Kent Ballon"
 state: "published"
