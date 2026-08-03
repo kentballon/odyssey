@@ -1,5 +1,5 @@
 ---
-title: "Crossing a mountain is a marathon"
+title: "Crossing a mountain is a marathon."
 number: 8
 author: "Kent Ballon"
 state: "published"
