@@ -33,13 +33,13 @@ I sifted through a series of related issues and worked through them individually
 several with pairing sessions to validate the right fix and get it reviewed 
 efficiently:
 
-- [Auditors cannot see group CI/CD (Runners)](gitlab.com/gitlab-org/gitlab/-/issues/357328)
-- [Auditor cannot view CI/CD analytics](gitlab.com/gitlab-org/gitlab/-/issues/355528)
-- [Auditor cannot see group compliance reports](gitlab.com/gitlab-org/gitlab/-/issues/355500)
-- [Auditor cannot view Container Registry at group level](gitlab.com/gitlab-org/gitlab/-/issues/354579)
-- [Auditor cannot see group wiki](gitlab.com/gitlab-org/gitlab/-/issues/354577)
-- [Follow-up from "Add auditor access for group runners" (Hide register a runner button)](gitlab.com/gitlab-org/gitlab/-/issues/367520)
-- [[Feature flag] Enable Auditor Access to Group Runners](gitlab.com/gitlab-org/gitlab/-/issues/368089)
+- [Auditors cannot see group CI/CD (Runners)](https://gitlab.com/gitlab-org/gitlab/-/issues/357328)
+- [Auditor cannot view CI/CD analytics](https://gitlab.com/gitlab-org/gitlab/-/issues/355528)
+- [Auditor cannot see group compliance reports](https://gitlab.com/gitlab-org/gitlab/-/issues/355500)
+- [Auditor cannot view Container Registry at group level](https://gitlab.com/gitlab-org/gitlab/-/issues/354579)
+- [Auditor cannot see group wiki](https://gitlab.com/gitlab-org/gitlab/-/issues/354577)
+- [Follow-up from "Add auditor access for group runners" (Hide register a runner button)](https://gitlab.com/gitlab-org/gitlab/-/issues/367520)
+- [[Feature flag] Enable Auditor Access to Group Runners](https://gitlab.com/gitlab-org/gitlab/-/issues/368089)
 
 Each of these addressed a specific behavioral gap between what an auditor
 account could see or do versus what it was supposed to be scoped to. 
@@ -59,10 +59,10 @@ The work shipped as part of [GitLab 15.5](about.gitlab.com/releases/2022/10/22/g
 - [Auditor users documentation](https://docs.gitlab.com/administration/auditor_users/)
 - [Ensure Auditor permissions in UI follow docs](https://gitlab.com/groups/gitlab-org/-/work_items/7469)
 - [GitLab 15.5 release post](about.gitlab.com/releases/2022/10/22/gitlab-15-5-released)
-- [Auditors cannot see group CI/CD (Runners)](gitlab.com/gitlab-org/gitlab/-/issues/357328)
-- [Auditor cannot view CI/CD analytics](gitlab.com/gitlab-org/gitlab/-/issues/355528)
-- [Auditor cannot see group compliance reports](gitlab.com/gitlab-org/gitlab/-/issues/355500)
-- [Auditor cannot view Container Registry at group level](gitlab.com/gitlab-org/gitlab/-/issues/354579)
-- [Auditor cannot see group wiki](gitlab.com/gitlab-org/gitlab/-/issues/354577)
-- [Follow-up from "Add auditor access for group runners" (Hide register a runner button)](gitlab.com/gitlab-org/gitlab/-/issues/367520)
-- [[Feature flag] Enable Auditor Access to Group Runners](gitlab.com/gitlab-org/gitlab/-/issues/368089)
+- [Auditors cannot see group CI/CD (Runners)](https://gitlab.com/gitlab-org/gitlab/-/issues/357328)
+- [Auditor cannot view CI/CD analytics](https://gitlab.com/gitlab-org/gitlab/-/issues/355528)
+- [Auditor cannot see group compliance reports](https://gitlab.com/gitlab-org/gitlab/-/issues/355500)
+- [Auditor cannot view Container Registry at group level](https://gitlab.com/gitlab-org/gitlab/-/issues/354579)
+- [Auditor cannot see group wiki](https://gitlab.com/gitlab-org/gitlab/-/issues/354577)
+- [Follow-up from "Add auditor access for group runners" (Hide register a runner button)](https://gitlab.com/gitlab-org/gitlab/-/issues/367520)
+- [[Feature flag] Enable Auditor Access to Group Runners](https://gitlab.com/gitlab-org/gitlab/-/issues/368089)
