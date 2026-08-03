@@ -39,7 +39,11 @@ rather than relying on the advisory's stated scope.
 To validate this we created a [fully isolated sandbox](https://handbook.gitlab.com/handbook/company/infrastructure-standards/realms/sandbox/)
 and integrated an LDAP application like [phpLDAPadmin](https://github.com/leenooks/phpLDAPadmin).
 
-![phpLDAPadmin](/static/images/phpldapadmin.png "phpLDAPadmin").
+![phpLDAPadmin](/static/images/phpldapadmin.png "phpLDAPadmin")
+
+![phpLDAPadmin](/images/phpldapadmin.png "phpLDAPadmin")
+
+{{< figure src="/images/phpldapadmin.png" title="Image Caption" alt="Alt text" class="custom-class" >}}
 
 We replicated the [attack vector](https://cwe.mitre.org/data/definitions/640.html)
 by creating new LDAP accounts and we were able to compromise them by resetting their passwords. 
