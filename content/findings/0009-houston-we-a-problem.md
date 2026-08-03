@@ -14,7 +14,7 @@ a GitLab instance's Identity Provider (IdP) was compromised. For compliance (and
 we had to a figure out a way to purge all active sessions from the running instance
 without touching the IdP.
 
-![Houston, we have a problem.](https://img.picturequotes.com/2/22/21146/houston-we-have-a-problem-quote-1.jpg "Houston, we have a problem.")
+![Houston, we have a problem.](https://gifrific.com/wp-content/uploads/2014/01/Apollo-13-Houston-We-Have-a-Problem-Tom-Hanks.gif "Houston, we have a problem.")
 
 ## Context
 
