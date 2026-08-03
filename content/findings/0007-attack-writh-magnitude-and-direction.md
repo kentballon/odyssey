@@ -11,6 +11,8 @@ tags: ["authentication","authorization","permissions"]
 
 We've uncovered an Attack Vector during an emergency escalation that compromised a GitLab instance using a [known issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/413028) around [GitLab Project Access Tokens](https://docs.gitlab.com/user/project/settings/project_access_tokens/). While some damage was done, we were able to formulate a mitigation plan to address and secure their instance.
 
+![Vector Perkins](https://static.wikia.nocookie.net/despicableme/images/4/46/Vector_wallpaper.jpeg/revision/latest?cb=20160515045329 "Vector Perkins")
+
 ## Context
 
 GitLab has the concept of [Internal users](https://docs.gitlab.com/administration/internal_users/) which we can think of as "bots" for automated and background transactions.

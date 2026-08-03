@@ -25,9 +25,10 @@ To add on top of that, they were heavily using [GitLab Geo](https://docs.gitlab.
 
 ![GitLab Geo](https://docs.gitlab.com/administration/geo/img/geo_architecture_v13_8.png "GitLab Geo")
 
-For this marathon we helped them migrate to a supported architecture. It took us 3 months to iron out their options, and assisted them prepare and validate their migration plans that management can vouch for (yes, we actually helped them with their internal docs). We answered 50+ detailed questions from the team and management.
+For this marathon we helped them migrate to a supported architecture. It took us 3 months to iron out their options, and assisted them prepare and validate their migration plans that management can vouch for (yes, we actually helped them with their internal docs). We answered 50+ detailed questions from the team and management, to be fair they
+were very cautious of certain items and we had to provide better context to address them.
 
-It then took us another 3 months of having close guidance for all activities (that's us having weekly calls to go through the steps ensuring nothing will break). I'd like to think being stubborn enough to endure such cases made me better.
+It took us another 3 months of having close guidance for all activities (that's us having weekly calls to go through the steps ensuring nothing will break). I'd like to think being stubborn enough to endure such cases made me better.
 
 Long story short, they were able to successfully migrate and overcome all technical issues earlier and continue to be a happy customer. I did in fact receive recognition and [discretionary bonus](https://handbook.gitlab.com/handbook/total-rewards/incentives/#discretionary-bonuses) for the stint so I guess a win win.
 

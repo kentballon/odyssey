@@ -9,10 +9,11 @@ tags: ["authentication", "auditor"]
 
 ## Summary
 
-Early in my GitLab years, I proactively contributed to the codebase
-by resolving feature requests and bugs in the
+I firmly believe that getting dirty and reading code is the best way
+to learn about an application. I picked feature requests and bugs in the
 [Auditor Role](https://docs.gitlab.com/administration/auditor_users/)
-functionality. Working with other engineers and pairing through several
+functionality and proactively contributed to the codebase as a way of learning. 
+Working with other engineers and pairing through several
 of the fixes, I implemented and merged multiple changes that closed gaps
 in this feature.
 
@@ -28,7 +29,7 @@ always behave the way compliance-focused customers expected.
 
 ## Details
 
-I picked up a series of related issues and worked through them individually, 
+I sifted through a series of related issues and worked through them individually, 
 several with pairing sessions to validate the right fix and get it reviewed 
 efficiently:
 

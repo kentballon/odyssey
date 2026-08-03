@@ -36,7 +36,7 @@ our existing documentation anticipated, so the first couple of instances turned 
 that had to be worked reactively. Writing it up wasn't just about the current tickets, 
 it was about making sure the next engineer who saw the same symptom had somewhere to start.
 
-Formalized KB coverage let customers self-serve on issues that would otherwise have
+Formalizing these articles let customers self-serve on issues that would otherwise have
 needed a support ticket, which reduced ticket volume on already-known problems and 
 freed up engineer time for the issues that actually needed hands-on investigation. 
 For emergency-prone cases like the curl bug, having the article in place meant the 

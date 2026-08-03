@@ -12,8 +12,8 @@ tags: ["vulnerability", "authentication", "LDAP"]
 Shortly after GitLab published the [16.7.2 critical security release](https://about.gitlab.com/releases/2024/01/11/critical-security-release-gitlab-16-7-2-released/), 
 which described the [account-takeover-via-password-reset vulnerability](https://docs.gitlab.com/releases/patches/patch-release-gitlab-16-7-2-released/#account-takeover-via-password-reset-without-user-interactions) 
 as affecting only regular and SAML users, we flagged a gap in that 
-scope assessment. Drawing on my experience with [Authentication and Authorization](https://docs.gitlab.com/auth/) 
-and working withother Support Engineers to validate the behavior, 
+scope assessment. Drawing from my experience with [Authentication and Authorization](https://docs.gitlab.com/auth/) 
+and working with other Support Engineers to validate the behavior, 
 we established that the vulnerability actually affected all authentication mechanisms, 
 not just the two called out in the original post.
 
@@ -28,9 +28,8 @@ assume they were out of scope by default.
 
 ## Details
 
-Pulling on that assumption is what surfaced the gap. LDAP users can still end up
-exposed to the same underlying flaw through paths that don't look like a 
-typical password reset at first glance. Rather than treat the "LDAP doesn't use 
+Pulling on that assumption surfaced the gap. LDAP users can still end up
+exposed to the same underlying flaw through paths. Rather than treat the "LDAP doesn't use 
 password reset" assumption as the end of the analysis, we worked through the 
 actual [authentication paths](https://docs.gitlab.com/user/profile/user_passwords/#passwords-for-externally-authenticated-accounts) 
 to confirm exposure, and cross-checked it against real LDAP-configured environments 
