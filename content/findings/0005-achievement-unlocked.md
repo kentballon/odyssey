@@ -1,5 +1,5 @@
 ---
-title: "Achievement Unlocked"
+title: "Achievement Unlocked!"
 number: 5
 author: "Kent Ballon"
 state: "draft"
