@@ -2,7 +2,7 @@
 title: "Is it stupid if it works?"
 number: 4
 author: "Kent Ballon"
-state: "draft"
+state: "published"
 date: 2025-09-25
 tags: ["emergency","integration","slack", "pagerduty"]
 ---

@@ -2,7 +2,7 @@
 title: "Achievement Unlocked!"
 number: 5
 author: "Kent Ballon"
-state: "draft"
+state: "published"
 date: 2025-11-24
 tags: ["internal tooling","emergency","slack"]
 ---
