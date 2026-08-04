@@ -48,7 +48,7 @@ This provides a more natural approach to finding the right person to talk to, wh
 
 <img src="https://gitlab.com/gitlab-com/support/toolbox/engineering-directory/-/raw/main/media/demo_new.gif" alt="Engineering Directory" style="width:100%; height:auto;">
 
-I approached this by using LLMs to generate something deterministic instead of relying on "agents" to do the work. I still take pride and enjoy solving engineering problems using my outdated CPU resources. I achieved this by correlation publicly available information about the team and consolidating an index mapped to all relevant values.
+I approached this by using LLMs to generate something deterministic instead of relying on "agents" to do the work. I still take pride and enjoy solving engineering problems using my outdated CPU resources. I achieved this by correlating publicly available information about the team and consolidating an index mapped to all relevant values.
 
 While I know there might be some negative connotations depending on which seat you reside in the industry, 
 I cannot discount the fact that the output has proved to be useful not only for our support team, but for our developers, CSMs, and marketing team. At the end of the day they are still tools for humans to use. 
