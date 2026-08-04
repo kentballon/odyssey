@@ -34,7 +34,7 @@ We jumped into the fire and identified a couple of mitigation plans and walked t
     - [Revoke a Project Access Token](https://docs.gitlab.com/api/project_access_tokens/#revoke-a-project-access-token)
 
 - In the interim, only administrators would be able to create them using the [Rails console](https://docs.gitlab.com/administration/operations/rails_console/).
-    - [Create Group Access Token with Rails Console][https://docs.gitlab.com/user/group/settings/group_access_tokens/#with-the-rails-console
+    - [Create Group Access Token with Rails Console](https://docs.gitlab.com/user/group/settings/group_access_tokens/#with-the-rails-console)
  
 - We explicitly added token expiry dates as part of [best practices](https://about.gitlab.com/blog/access-token-lifetime-limits/).
 - We've helped them move their internal projects to private visibility.
