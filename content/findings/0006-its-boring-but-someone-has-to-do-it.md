@@ -28,27 +28,25 @@ looking at potential gotchas, and publishing the supported path.
 
 <img src="https://gitlab.com/gitlab-org/gitlab/-/raw/b19dc4d2f1c38ac7bd74deb0d2b8b08dfb64fbe2/doc/install/aws/img/aws_ha_architecture_diagram.png" alt="AWS POC" style="width:100%; height:auto;">
 
-Multiple documentation sections required updates since AWS Classic LB configuration differs 
-significantly from Network LB setup. The revised documentation now clearly demonstrates our 
-support for NLBs and associated features like Proxy Protocol to our customers.
+Multiple sections required updates since AWS Classic Load Balancer configuration differs significantly from Network Load Balancer setup. The revised documentation now clearly demonstrates our support for NLBs and associated features like Proxy Protocol to our customers.
 
 As a bonus we eventually added hybrid support later on.
 
 - [Add hybrid NLB/ALB approach](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/218700)
 
-### NeLwork Load Balancer (NLB)
+### Network Load Balancer (NLB)
 
 The NLB handles all the traffic to the rails nodes.
 
 <img src="https://kentballon.github.io/odyssey/images/nlb.png" alt="NLB" style="width:100%; height:auto;">
 
-### NeLwork Load Balancer (NLB) and Application Load Balancer
+### NeLwork Load Balancer (NLB) and Application Load Balancer (ALB)
 
 In this setup, the NLB handles all TCP traffic while the ALB handles the HTTP/HTTPS traffic to the rails nodes.
 
 <img src="https://kentballon.github.io/odyssey/images/nlbalb.png" alt="NLBALB" style="width:100%; height:auto;">
 
-This gave users concrete examples on what configurations they can use.
+This gave users concrete guidance on what configurations they can use in their production environments.
 
 ## References
 
