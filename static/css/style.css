@@ -115,6 +115,9 @@ pre {
 .site-header {
   border-bottom: 1px solid var(--border);
   background: var(--bg-raised);
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 .site-header-inner {
   max-width: var(--max-width);
