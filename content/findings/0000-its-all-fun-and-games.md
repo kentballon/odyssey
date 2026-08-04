@@ -19,6 +19,12 @@ At a time when LLMs were still but figments of our imagination, there was a grea
 
 ## Details
 
+### Networked Box
+
+[Networked](https://www.hackthebox.com/machines/networked) is an Easy difficulty Linux box vulnerable to file upload bypass, leading to code execution. Due to improper sanitization, a crontab running as the user can be exploited to achieve command execution. The user has privileges to execute a network configuration script, which can be leveraged to execute commands as root.
+
+<img src="https://kentballon.github.io/odyssey/images/htb/networked.png" alt="NLBALB" style="width:100%; height:auto;">
+
 ### Bounty Box
 
 [Bounty](https://www.hackthebox.com/machines/bounty) is an easy to medium difficulty machine, which features an interesting technique to bypass file uploader protections and achieve code execution. This machine also highlights the importance of keeping systems updated with the latest security patches.
@@ -50,12 +56,6 @@ At a time when LLMs were still but figments of our imagination, there was a grea
 
 
 <img src="https://kentballon.github.io/odyssey/images/htb/jerry.png" alt="NLBALB" style="width:100%; height:auto;">
-
-### Networked Box
-
-[Networked](https://www.hackthebox.com/machines/networked) is an Easy difficulty Linux box vulnerable to file upload bypass, leading to code execution. Due to improper sanitization, a crontab running as the user can be exploited to achieve command execution. The user has privileges to execute a network configuration script, which can be leveraged to execute commands as root.
-
-<img src="https://kentballon.github.io/odyssey/images/htb/networked.png" alt="NLBALB" style="width:100%; height:auto;">
 
 ### Poison Box
 
