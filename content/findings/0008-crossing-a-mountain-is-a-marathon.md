@@ -20,6 +20,8 @@ We've established an agreement of what they envisioned the future would be and e
 
 In this specific scenario, their problems were mainly coming from using [non-stateful Gitaly components](https://docs.gitlab.com/administration/reference_architectures/#stateful-components-in-kubernetes) in their large [reference architecture](https://docs.gitlab.com/administration/reference_architectures/) which was not generally available (GA) [up until recently](https://docs.gitlab.com/administration/gitaly/kubernetes/#context). 
 
+<img src="imahttps://docs.gitlab.com/administration/gitaly/img/shard_example_v13_3.png" alt="Alt Text" style="width:50%; height:auto;">
+
 ![Gitaly](https://docs.gitlab.com/administration/gitaly/img/shard_example_v13_3.png "Gitaly")
 
 To add on top of that, they were heavily using [GitLab Geo](https://docs.gitlab.com/administration/geo/) which added to the overall load on the environments. 
