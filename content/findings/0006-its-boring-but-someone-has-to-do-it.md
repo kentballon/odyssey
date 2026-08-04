@@ -40,6 +40,49 @@ As a bonus we eventually added hybrid support later on.
 
 - [Add hybrid NLB/ALB approach](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/218700)
 
+### NeLwork Load Balancer (NLB)
+
+The NLB handles all the traffic to the rails nodes.
+
+```mermaid
+graph TB
+    Users["Users"]
+    NLB["Network Load Balancer<br/>(Port 22, 80, 443)"]
+    Rails1["Rails Node 1<br/>(Port 22, 80)"]
+    Rails2["Rails Node 2<br/>(Port 22, 80)"]
+    
+    Users -->|SSH| NLB
+    Users -->|HTTP| NLB
+    Users -->|HTTPS| NLB
+    NLB -->|Port 22| Rails1
+    NLB -->|Port 22| Rails2
+    NLB -->|Port 80, 443| Rails1
+    NLB -->|Port 80, 443| Rails2
+```
+
+### NeLwork Load Balancer (NLB) and Application Load Balancer
+
+In this setup, the NLB handles all TCP traffic while the ALB handles the HTTP/HTTPS traffic to the rails nodes.
+
+```mermaid
+graph TB
+    Users["Users"]
+    NLB["Network Load Balancer<br/>(Port 22, 443)"]
+    ALB["Application Load Balancer<br/>(Port 443)"]
+    Rails1["Rails Node 1<br/>(Port 22, 80)"]
+    Rails2["Rails Node 2<br/>(Port 22, 80)"]
+    
+    Users -->|SSH| NLB
+    Users -->|HTTPS| NLB
+    NLB -->|Port 22| Rails1
+    NLB -->|Port 22| Rails2
+    NLB -->|Port 443| ALB
+    ALB -->|Port 80| Rails1
+    ALB -->|Port 80| Rails2
+```
+
+This gave users concrete examples on what configurations they can use.
+
 ## References
 
 - [AWS POC documentation](https://docs.gitlab.com/install/aws/)
