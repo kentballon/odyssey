@@ -355,4 +355,45 @@ html[data-theme="light"] .theme-toggle-light { color: var(--accent); font-weight
 .finding-body h3 { font-size: 1.1rem; margin-top: 1.8rem; }
 .finding-body h2, .finding-body h3, .finding-body h4 { scroll-margin-top: 1.5rem; }
 .finding-body p { margin: 1rem 0; }
-.finding-body ul, .finding-body ol {
+.finding-body ul, .finding-body ol { padding-left: 1.4rem; }
+.finding-body blockquote {
+  margin: 1.2rem 0;
+  padding: 0.2rem 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text-dim);
+}
+.finding-body img { max-width: 100%; border-radius: var(--radius); }
+.finding-body table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  margin: 1.2rem 0;
+}
+.finding-body th, .finding-body td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+.finding-body pre.mermaid {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+.finding-body pre.mermaid svg { max-width: 100%; }
+
+.finding-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ---------------------------------------------------------------------
+   Responsive
+--------------------------------------------------------------------- */
+@media (min-width: 720px) {
+  .col-tags { white-space: nowrap; }
+}
+@media (max-width: 480px) {
+  .site-tagline { display: none; }
+  .index-table .col-tags { display: none; }
+}
