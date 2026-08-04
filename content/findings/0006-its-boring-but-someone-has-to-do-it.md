@@ -30,7 +30,7 @@ looking at potential gotchas, and publishing the supported path.
 
 - [Update AWS POC to suggest NLB](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/147218)
 
-![AWS POC](https://gitlab.com/gitlab-org/gitlab/-/raw/b19dc4d2f1c38ac7bd74deb0d2b8b08dfb64fbe2/doc/install/aws/img/aws_ha_architecture_diagram.png "AWS POC")
+<img src="https://gitlab.com/gitlab-org/gitlab/-/raw/b19dc4d2f1c38ac7bd74deb0d2b8b08dfb64fbe2/doc/install/aws/img/aws_ha_architecture_diagram.png" alt="AWS POC" style="width:100%; height:auto;">
 
 Multiple documentation sections required updates since AWS Classic LB configuration differs 
 significantly from Network LB setup. The revised documentation now clearly demonstrates our 

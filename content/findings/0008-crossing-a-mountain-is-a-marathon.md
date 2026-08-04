@@ -20,13 +20,11 @@ We've established an agreement of what they envisioned the future would be and e
 
 In this specific scenario, their problems were mainly coming from using [non-stateful Gitaly components](https://docs.gitlab.com/administration/reference_architectures/#stateful-components-in-kubernetes) in their large [reference architecture](https://docs.gitlab.com/administration/reference_architectures/) which was not generally available (GA) [up until recently](https://docs.gitlab.com/administration/gitaly/kubernetes/#context). 
 
-<img src="imahttps://docs.gitlab.com/administration/gitaly/img/shard_example_v13_3.png" alt="Alt Text" style="width:50%; height:auto;">
-
-![Gitaly](https://docs.gitlab.com/administration/gitaly/img/shard_example_v13_3.png "Gitaly")
+<img src="https://docs.gitlab.com/administration/gitaly/img/shard_example_v13_3.png" alt="Gitaly" style="width:100%; height:auto;">
 
 To add on top of that, they were heavily using [GitLab Geo](https://docs.gitlab.com/administration/geo/) which added to the overall load on the environments. 
 
-![GitLab Geo](https://docs.gitlab.com/administration/geo/img/geo_architecture_v13_8.png "GitLab Geo")
+<img src="https://docs.gitlab.com/administration/geo/img/geo_architecture_v13_8.png" alt="GitLab Geo" style="width:100%; height:auto;">
 
 For this marathon we helped them migrate to a supported architecture. It took us 3 months to iron out their options, and assisted them prepare and validate their migration plans that management can vouch for (yes, we actually helped them with their internal docs). We answered 50+ detailed questions from the team and management, to be fair they
 were very cautious of certain items and we had to provide better context to address them.

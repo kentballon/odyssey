@@ -12,7 +12,7 @@ tags: ["internal tooling","documentation"]
 I created an internal tool the team can use to search features, groups, members, 
 documentation and product category. 
 
-![](https://gitlab.com/gitlab-com/support/toolbox/engineering-directory/-/raw/main/media/demo_new.gif)
+<img src="https://gitlab.com/gitlab-com/support/toolbox/engineering-directory/-/raw/main/media/demo_new.gif" alt="Engineering Directory" style="width:100%; height:auto;">
 
 ## Context
 
