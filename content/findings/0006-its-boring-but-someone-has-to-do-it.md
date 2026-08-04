@@ -44,14 +44,13 @@ As a bonus we eventually added hybrid support later on.
 
 The NLB handles all the traffic to the rails nodes.
 
-<img src="static/images/nlb.png" alt="NLB" style="width:100%; height:auto;">
+![](/static/images/nlb.png)
 
 ### NeLwork Load Balancer (NLB) and Application Load Balancer
 
 In this setup, the NLB handles all TCP traffic while the ALB handles the HTTP/HTTPS traffic to the rails nodes.
 
-<img src="static/images/nlbalb.png" alt="NLBALB" style="width:100%; height:auto;">
-
+![](/static/images/nlbalb.png)
 This gave users concrete examples on what configurations they can use.
 
 ## References
