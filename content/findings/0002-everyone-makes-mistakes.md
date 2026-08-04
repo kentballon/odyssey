@@ -43,19 +43,21 @@ and integrated an LDAP application like [phpLDAPadmin](https://github.com/leenoo
 We replicated the [attack vector](https://cwe.mitre.org/data/definitions/640.html)
 by creating new LDAP accounts and we were able to compromise them by resetting their passwords. 
 
-Once that was confirmed, the finding needed to move fast, given the severity 
-classification and the fact that customers were actively using the original scope 
-statement to judge their own exposure. We escalated internally and coordinated with 
+Given the severity classification and the fact that customers were actively using the original scope 
+statement to judge their own exposure, the finding needed to move fast. We escalated internally and coordinated with 
 the relevant stakeholders to get the security blog post corrected:
 
 - [Add clarity around impact of LDAP users in 16-7 blog post](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/132419)
 
-Because of the security classification, getting the scope right mattered more than 
-getting it out fast, and prioritizing the correction meant customers relying on 
+Because of the security classification, getting the scope was critical, 
+and prioritizing the correction meant customers relying on 
 LDAP could accurately assess whether the vulnerability applied to them, 
 instead of ruling themselves out based on an advisory that undercounted the affected population. 
 It also kept GitLab's transparency posture intact on a critical-severity issue, 
 where an inaccurate scope statement is its own kind of risk.
+
+While I didn't get a [discretionary bonus](https://handbook.gitlab.com/handbook/total-rewards/incentives/#discretionary-bonuses),
+I did get a nomination for the "Excellence Under Pressure" Quarterly award as shared by our then CTO.
 
 ## References
 
