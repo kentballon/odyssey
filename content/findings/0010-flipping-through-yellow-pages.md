@@ -50,6 +50,43 @@ This provides a more natural approach to finding the right person to talk to, wh
 
 I approached this by using LLMs to generate something deterministic instead of relying on "agents" to do the work. I still take pride and enjoy solving engineering problems using my outdated CPU resources. I achieved this by correlating publicly available information about the team and consolidating an index mapped to all relevant values.
 
+```
+    print("Fetching GitLab sections data...")
+    sections_data = fetch_sections_data()
+    
+    print("Fetching GitLab stages data...")
+    stages_data = fetch_stages_data()
+    
+    print("Fetching GitLab features data...")
+    features_data = fetch_features_data()
+    
+    print("Fetching GitLab categories data...")
+    categories_data = fetch_categories_data()
+    
+    print("Loading GitLab documentation metadata...")
+    doc_entries = load_gitlab_docs_metadata()
+    
+    print("Creating group mappings...")
+    group_mappings = create_group_mappings(stages_data, sections_data, categories_data)
+    
+    print("Fetching GitLab team member data...")
+    team_members = fetch_team_data()
+    print(f"Found {len(team_members)} total team members")
+    
+    print("Filtering Engineering division members...")
+    engineering_members = filter_engineering_members(team_members)
+    print(f"Found {len(engineering_members)} Engineering members")
+    
+    print("Enhancing members with role information...")
+    enhanced_members = enhance_members_with_roles(engineering_members, group_mappings)
+    
+    print("Grouping by unified groups...")
+    grouped_members = group_by_unified_groups(enhanced_members, group_mappings)
+    
+    print("Creating feature-category mappings...")
+    feature_mappings = create_feature_category_mappings(features_data, group_mappings, doc_entries)
+```
+
 While I know there might be some negative connotations depending on which seat you reside in the industry, 
 I cannot discount the fact that the output has proved to be useful not only for our support team, but for our developers, CSMs, and marketing team. At the end of the day they are still tools for humans to use. 
 
