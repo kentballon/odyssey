@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+{{- partial "head.html" . -}}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,13 +38,11 @@
   </footer>
 
   <script src="{{ "js/theme.js" | relURL }}"></script>
-
-  {{ if .Store.Get "hasMermaid" }}
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
-    </script>
-  {{ end }}
-
+  {{- partial "preloader.html" . -}}
+	{{- partial "header.html" . -}}
+	{{- block "main" . }}{{- end }}
+	{{- partial "footer.html" . -}}
+	
+	{{ partial "mermaid.html" . }}
 </body>
 </html>
