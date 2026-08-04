@@ -291,33 +291,35 @@ html[data-theme="light"] .theme-toggle-light { color: var(--accent); font-weight
   background: var(--bg-raised);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.5rem;
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1.5rem;
 }
-.finding-meta dl { margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.meta-row { display: flex; gap: 1rem; align-items: baseline; }
-.meta-row dt {
+.meta-cell { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.meta-cell-wide { grid-column: 1 / -1; }
+.meta-cell dt {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-faint);
-  width: 5.5rem;
-  flex-shrink: 0;
+  margin: 0;
 }
-.meta-row dd { margin: 0; font-size: 0.9rem; color: var(--text); }
+.meta-cell dd { margin: 0; font-size: 0.88rem; color: var(--text); }
 
 .finding-toc {
   background: var(--bg-inset);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1rem 1.25rem;
-  margin-bottom: 2rem;
-  font-size: 0.88rem;
+  padding: 1rem 1.1rem;
+  margin: 0 0 2rem;
+  font-size: 0.85rem;
 }
 .finding-toc-label {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-faint);
@@ -326,42 +328,28 @@ html[data-theme="light"] .theme-toggle-light { color: var(--accent); font-weight
 .finding-toc nav > ul,
 .finding-toc ul { list-style: none; margin: 0; padding-left: 0.9rem; }
 .finding-toc > ul { padding-left: 0; }
-.finding-toc li { margin: 0.2rem 0; }
+.finding-toc li { margin: 0.25rem 0; }
 .finding-toc a { color: var(--text-dim); }
 .finding-toc a:hover { color: var(--link); }
+
+/* Only float the TOC into the margin once there's enough spare width on
+   either side of the centered content column to hold it without crowding
+   or overlapping. Below this, it stays in normal flow above the body,
+   at full content width, exactly like the rest of the page. */
+@media (min-width: 1400px) {
+  .finding-toc {
+    position: fixed;
+    top: 6rem;
+    left: calc(50% - (var(--max-width) / 2) - 2rem - 230px);
+    width: 230px;
+    margin: 0;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+  }
+}
 
 .finding-body h2 { font-size: 1.35rem; margin-top: 2.2rem; }
 .finding-body h3 { font-size: 1.1rem; margin-top: 1.8rem; }
 .finding-body h2, .finding-body h3, .finding-body h4 { scroll-margin-top: 1.5rem; }
 .finding-body p { margin: 1rem 0; }
-.finding-body ul, .finding-body ol { padding-left: 1.4rem; }
-.finding-body blockquote {
-  margin: 1.2rem 0;
-  padding: 0.2rem 1rem;
-  border-left: 3px solid var(--accent);
-  color: var(--text-dim);
-}
-.finding-body img { max-width: 100%; border-radius: var(--radius); }
-.finding-body table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 0.9rem;
-  margin: 1.2rem 0;
-}
-.finding-body th, .finding-body td {
-  border: 1px solid var(--border);
-  padding: 0.4rem 0.6rem;
-  text-align: left;
-}
-.finding-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-
-/* ---------------------------------------------------------------------
-   Responsive
---------------------------------------------------------------------- */
-@media (min-width: 720px) {
-  .col-tags { white-space: nowrap; }
-}
-@media (max-width: 480px) {
-  .site-tagline { display: none; }
-  .index-table .col-tags { display: none; }
-}
+.finding-body ul, .finding-body ol {

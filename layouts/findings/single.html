@@ -9,34 +9,32 @@
 
   <h1 class="finding-title">{{ .Title }}</h1>
 
-  <aside class="finding-meta">
-    <dl>
-      <div class="meta-row">
-        <dt>State</dt>
-        <dd><span class="badge badge-{{ .Params.state | default "notes" }}">{{ .Params.state | default "notes" }}</span></dd>
-      </div>
-      <div class="meta-row">
-        <dt>FD</dt>
-        <dd>{{ printf "%04d" (int .Params.number) }}</dd>
-      </div>
-      {{ with .Params.author }}
-      <div class="meta-row">
-        <dt>Author</dt>
-        <dd>{{ . }}</dd>
-      </div>
-      {{ end }}
-      <div class="meta-row">
-        <dt>Updated</dt>
-        <dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time></dd>
-      </div>
-      {{ with .GetTerms "tags" }}
-      <div class="meta-row">
-        <dt>Tags</dt>
-        <dd>{{ range . }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</dd>
-      </div>
-      {{ end }}
-    </dl>
-  </aside>
+  <dl class="finding-meta">
+    <div class="meta-cell">
+      <dt>State</dt>
+      <dd><span class="badge badge-{{ .Params.state | default "notes" }}">{{ .Params.state | default "notes" }}</span></dd>
+    </div>
+    <div class="meta-cell">
+      <dt>FD</dt>
+      <dd>{{ printf "%04d" (int .Params.number) }}</dd>
+    </div>
+    {{ with .Params.author }}
+    <div class="meta-cell">
+      <dt>Author</dt>
+      <dd>{{ . }}</dd>
+    </div>
+    {{ end }}
+    <div class="meta-cell">
+      <dt>Updated</dt>
+      <dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time></dd>
+    </div>
+    {{ with .GetTerms "tags" }}
+    <div class="meta-cell meta-cell-wide">
+      <dt>Tags</dt>
+      <dd>{{ range . }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</dd>
+    </div>
+    {{ end }}
+  </dl>
 
   {{ if .TableOfContents }}
   <nav class="finding-toc">
