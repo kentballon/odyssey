@@ -2,7 +2,7 @@
 title: "It's all fun and games"
 number: 0
 author: "Kent Ballon"
-state: "draft"   # draft | discussion | published | abandoned | notes
+state: "published"
 date: 2018-08-10
 tags: ["security","penetration testing"]
 ---
