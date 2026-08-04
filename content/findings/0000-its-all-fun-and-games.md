@@ -32,7 +32,7 @@ At a time when LLMs were still but figments of our imagination, there was a grea
 
 <img src="https://kentballon.github.io/odyssey/images/htb/celestial.png" alt="NLBALB" style="width:100%; height:auto;">
 
-### DevOps Box
+### DevOops Box
 
 [DevOops](https://www.hackthebox.com/machines/devoops) is a relatively quick machine to complete which focuses on XML external entities and Python pickle vulnerabilities to gain a foothold.
 
@@ -57,7 +57,7 @@ At a time when LLMs were still but figments of our imagination, there was a grea
 
 <img src="https://kentballon.github.io/odyssey/images/htb/networked.png" alt="NLBALB" style="width:100%; height:auto;">
 
-### Poion Box
+### Poison Box
 
 [Poison](https://www.hackthebox.com/machines/poison) is a fairly easy machine which focuses mainly on log poisoning and port forwarding/tunneling. The machine is running FreeBSD which presents a few challenges for novice users as many common binaries from other distros are not available.
 
