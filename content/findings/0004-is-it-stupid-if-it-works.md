@@ -47,13 +47,9 @@ We've evaluated this for a couple of weeks and found it successful based on our 
 
 - [CEOC Workflow: @ceoc-next Slack handle trial](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7197)
 
-This allows eliminates manual lookup of schedules for handovers. It gives engineers easier 
-path for coordination during overlapping/multiple emergencies. It also opened up earlier engagement 
-for better handovers instead of waiting for the current on-call enginers time to run up.
+This new handle eliminates manual lookup of schedules for handovers. It gives engineers an easier path for coordination during overlapping or multiple emergencies. It also opened up earlier engagement for better handovers instead of waiting for the current on-call enginers time to run up.
 
-With the increased adoption, we later implemented this to other on-call rotations 
-as well and has proven quite useful. We did receive pushback for the
-manager's handles as it was deemed a bit noisy for a few of them (can't win them all).
+With the increased adoption, we later extended this to other on-call rotations. While it received positive reviews for Individual Contributors (ICs)We did receive pushback for the manager's handle as it was deemed a bit noisy for a few of them (can't win them all).
 
 - [RFC: Implement @cmoc-next, @dedicated-cmoc-next, and @support-manager-oncall-next handles](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7212)
 - [Slack handle trial: @cmoc-next, @dedicated-cmoc-next, and @support-manager-oncall-next](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7228)

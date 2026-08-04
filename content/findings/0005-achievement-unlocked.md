@@ -30,8 +30,7 @@ I've pushed the idea to emergencies. Previously all discussions and findings
 from emergencies are lost after Slack's data retention duration. This means
 a lot of useful information are not persisted and don't make their way 
 into our documentation or knowledge base. I firmly believe that the first step
-is capturing that somewhere so that we can later use leverage the accumuldated
-data.
+is capturing that somewhere so that we can later use and leverage the accumuldated data.
 
 Once we had enough data, we had the ability to consume it and implement other projects around it like this:
 

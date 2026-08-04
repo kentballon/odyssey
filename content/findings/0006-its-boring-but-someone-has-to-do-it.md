@@ -9,11 +9,8 @@ tags: ["aws","load balancer","documentation"]
 
 ## Summary
 
-[GitLab's AWS POC documentation](https://docs.gitlab.com/install/aws/) was still 
-using the AWS Classic Load Balancer however this has already been deprecated 
-for a while now. GitLab's [Load Balancer documentation](https://docs.gitlab.com/administration/load_balancer/) 
-doesn't quite mention if it supported Network Load Balancers (NLBs) so I took the 
-initiative to test the architecture and update the whole documentation accordingly.
+There was a time when [GitLab's AWS POC documentation](https://docs.gitlab.com/install/aws/) was still using the AWS Classic Load Balancer despite this being already been deprecated for a while. GitLab's [Load Balancer documentation](https://docs.gitlab.com/administration/load_balancer/) 
+doesn't quite mention if it supported Network Load Balancers (NLBs) so we took the initiative to test the architecture and update the whole documentation accordingly.
 
 ## Context
 
@@ -24,8 +21,7 @@ and were not sure how to implement them.
 
 ## Details
 
-While we only see the final product in the documentation, I went through the process of 
-exploring the solution by setting up the POC in AWS, validating the options for the customers, 
+While we only see the final product in the documentation, we went through the process of exploring the solution by setting up the Proof of Concept (POC) in AWS, validating the options for the customers, 
 looking at potential gotchas, and publishing the supported path. 
 
 - [Update AWS POC to suggest NLB](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/147218)
