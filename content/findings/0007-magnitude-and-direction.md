@@ -25,6 +25,8 @@ The problem stems from the fact that any Project Access Token can [have access t
 
 > Project access tokens are treated as internal users. If an internal user creates a project access token, that token can access all projects that have visibility level set to Internal.
 
+<img src="https://kentballon.github.io/odyssey/images/this_is_fine.png" alt="This is fine" style="width:100%; height:auto;">
+
 One of those tokens got leaked by their user and lead to their instance being compromised. We didn't hesitate to jump into the fire and identified a couple of options to mitigate the issue. We then walked them through the whole process.
 
 - First, we had to rotate and purge compromised tokens (Personal and Project Access tokens). 
