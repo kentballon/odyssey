@@ -9,7 +9,7 @@ tags: ["authentication","authorization","permissions"]
 
 ## Summary
 
-We've uncovered an Attack Vector during an emergency escalation that compromised a GitLab instance using a [known issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/413028) around [GitLab Project Access Tokens](https://docs.gitlab.com/user/project/settings/project_access_tokens/). While the damage was out of our control, we were able to formulate a mitigation plan to address and secure their instance.
+We've uncovered an attack vector during an emergency escalation that compromised a GitLab instance using a [known issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/413028) around [GitLab Project Access Tokens](https://docs.gitlab.com/user/project/settings/project_access_tokens/). While the damage was out of our control, we were able to formulate a mitigation plan to address and secure their instance.
 
 <img src="https://static.wikia.nocookie.net/despicableme/images/4/46/Vector_wallpaper.jpeg/revision/latest/scale-to-width-down/1000?cb=20160515045329" alt="Vector Perkins" style="width:100%; height:auto;">
 
