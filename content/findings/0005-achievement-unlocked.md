@@ -15,12 +15,12 @@ internal tooling after contributing a couple of features and acting as regular r
 ## Context
 
 Keeping track of all your work shouldn't add extra load to your plate.
-One of our Staff engineers developed [Pairify](https://handbook.gitlab.com/handbook/support/workflows/pairify/)
+One of our [Staff engineers](https://gitlab.com/anton) developed [Pairify](https://handbook.gitlab.com/handbook/support/workflows/pairify/)
 to allow GitLab engineers to quickly capture and store relevant discussions.
 
 ## Details
 
-I have helped our Staff engineer maintain this product and published
+I have helped our [Staff engineer](https://gitlab.com/anton) maintain this product and published
 a couple of features like this:
 
 - [RFC: Pairify custom lookback period feedback](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7453)
