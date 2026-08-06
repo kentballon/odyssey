@@ -116,6 +116,12 @@ The exact log paths can vary depending on the installation type and the location
 - Failed requests
 
 The output showed that a service account generated more than 5,000 requests in approximately two minutes. 
+
+
+| User | Count | Count % | RPS | RPS % | Duration | Dur % | DB | DB % | Redis | Redis % | Gitaly | Gitaly % | CPU | CPU % | Mem | Mem % | Fail Ct | Fail % |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| mole | 5207 | 54 | 2.50 | 54 | 9m17.0s | 56 | 2m04.4s | 59 | 22.5s | 32 | 0.6s | 1 | 8m38.9s | 57 | 7.46 GiB | 50 | 0 | 0 |
+
 Most of the activity appeared to be `git-upload-pack` requests, which are associated with Git fetch or pull operations. 
 Unfortunately, [rate limits](https://docs.gitlab.com/administration/settings/git_http_rate_limits/) 
 were not configured on this instance which is why the service account had its spree.
