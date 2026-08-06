@@ -11,7 +11,7 @@ tags: ["postgresql","database","migrations"]
 
 Using the investigation from [505982](https://gitlab.com/gitlab-org/gitlab/-/work_items/505982) as a useful precedent, we formulated a workaround in [548685](https://gitlab.com/gitlab-org/gitlab/-/work_items/548685#workaround) that was blocking the upgrade of large GitLab deployments. We also published a [KB article](https://support.gitlab.com/hc/en-us/articles/20536941902876-PG-CheckViolation-ERROR-check-constraint-check-4fab85ecdc-of-relation-ci-build-needs-is-violated-by-some-row) and delivered a backport fix within the month.
 
-<img src="https://kentballon.github.io/odyssey/images/htb/bar_joke.jpg" alt="NLBALB" style="width:100%; height:auto;">
+<img src="https://kentballon.github.io/odyssey/images/bar_joke.jpg" alt="Bar Joke" style="width:100%; height:auto;">
 
 ## Context
 
@@ -46,7 +46,7 @@ Although I am not a database engineer, I am comfortable diving into these proble
 
 The failed constraint was related to the `project_id` column in the `ci_build_needs` table. Some environments had rows where `project_id` was `NULL`, even though the related build record contained the project information needed to populate it.
 
-<img src="https://kentballon.github.io/odyssey/images/htb/null.png" alt="NLBALB" style="width:100%; height:auto;">
+<img src="https://kentballon.github.io/odyssey/images/null.png" alt="Null Pointer" style="width:100%; height:auto;">
 
 The first step was to confirm whether any rows violated the constraint:
 
