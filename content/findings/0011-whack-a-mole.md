@@ -9,7 +9,7 @@ tags: ["performance","troubleshooting","database","automation"]
 
 ## Summary
 
-I worked on a GitLab instance where intermittent performance degadation
+I worked on a GitLab instance where intermittent performance degradation
 and request timeouts were reported after upgrading from `16.7.10` to `16.11.10`.
 Initial checks covered completed migrations, PostgreSQL statistics, Sidekiq backlog, 
 and system capacity, but the issue persisted. Using fast-stats against GitLabSOS logs, 
