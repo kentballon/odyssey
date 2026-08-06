@@ -156,3 +156,4 @@ mole that caused the issue. Whack!
 - [Gitaly](https://docs.gitlab.com/development/architecture/#gitaly)
 - [Rate limits](https://docs.gitlab.com/administration/settings/git_http_rate_limits/)
 - [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
+- [Austin Powers Mole](https://static.wikia.nocookie.net/austinpowers/images/b/ba/The_mole_bloody_mole.jpg/revision/latest?cb=20150326131618)
