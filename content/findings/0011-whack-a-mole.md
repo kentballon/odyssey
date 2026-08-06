@@ -134,11 +134,12 @@ and placed additional pressure on Gitaly and the Rails background processing com
 
 #### Resolution
 
-To mitigate the issue, we adjusted the instance capacity and GitLab application configuration based on the observed workload. 
-This included increasing available CPU and memory and adjusting the Puma worker configuration.
+To test our hypothesis, we temporarily disabled the service account during peak hours and was able to validate that it was the main culprit.
 
-We also reviewed the ArgoCD polling pattern and the related service-account activity and recommended
-adding some backoff logic to reduce the overall load.
+We reviewed the ArgoCD polling pattern and the related service-account activity and since this was an expected new addition to their workflow, we recommended configuring the necessary [rate limits](https://docs.gitlab.com/administration/settings/git_http_rate_limits/) so that this won't happen again.
+
+We also adjusted the instance capacity and GitLab application configuration based on the observed workload. 
+This included increasing available CPU and memory and adjusting the [Puma worker configuration](https://docs.gitlab.com/administration/operations/puma/).
 
 And that is how we figured that it was never the upgrade that caused the issue, it was that undocumented
 mole that caused the issue. Whack!
@@ -155,5 +156,6 @@ mole that caused the issue. Whack!
 - [Rails](https://docs.gitlab.com/development/architecture/#puma) 
 - [Gitaly](https://docs.gitlab.com/development/architecture/#gitaly)
 - [Rate limits](https://docs.gitlab.com/administration/settings/git_http_rate_limits/)
+- [Puma worker configuration](https://docs.gitlab.com/administration/operations/puma/)
 - [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
 - [Austin Powers Mole](https://static.wikia.nocookie.net/austinpowers/images/b/ba/The_mole_bloody_mole.jpg/revision/latest?cb=20150326131618)
