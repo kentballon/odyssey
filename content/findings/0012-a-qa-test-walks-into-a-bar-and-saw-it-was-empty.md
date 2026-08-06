@@ -11,7 +11,7 @@ tags: ["postgresql","database","migrations"]
 
 Using the investigation from [505982](https://gitlab.com/gitlab-org/gitlab/-/work_items/505982) as a useful precedent, we formulated a workaround in [548685](https://gitlab.com/gitlab-org/gitlab/-/work_items/548685#workaround) that was blocking the upgrade of large GitLab deployments. We also published a [KB article](https://support.gitlab.com/hc/en-us/articles/20536941902876-PG-CheckViolation-ERROR-check-constraint-check-4fab85ecdc-of-relation-ci-build-needs-is-violated-by-some-row) and delivered a backport fix within the month.
 
-<img src="https://en.wikipedia.org/wiki/Bar_joke#/media/File:A_priest,_a_rabbi,_a_minister_and_a_duck_walk_into_a_bar.jpg" alt="Bar Joke" style="width:100%; height:auto;">
+<img src="https://kentballon.github.io/odyssey/images/htb/bar_joke.jpg" alt="NLBALB" style="width:100%; height:auto;">
 
 ## Context
 
@@ -46,7 +46,7 @@ Although I am not a database engineer, I am comfortable diving into these proble
 
 The failed constraint was related to the `project_id` column in the `ci_build_needs` table. Some environments had rows where `project_id` was `NULL`, even though the related build record contained the project information needed to populate it.
 
-<img src="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fshoutout-to-all-the-null-pointers-just-doing-their-jobs-v0-ic1ic8jjkys71.png%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3Dfb54b5362f7348406a80160e56c847892b4560f1" alt="Bar Joke" style="width:100%; height:auto;">
+<img src="https://kentballon.github.io/odyssey/images/htb/null.png" alt="NLBALB" style="width:100%; height:auto;">
 
 The first step was to confirm whether any rows violated the constraint:
 
@@ -119,3 +119,5 @@ Engineering was then able to deliver a backport fix within the month, reducing t
 - [505982](https://gitlab.com/gitlab-org/gitlab/-/work_items/505982)
 - [548685](https://gitlab.com/gitlab-org/gitlab/-/work_items/548685#workaround)
 - [18.0.1 patch release announcement](https://docs.gitlab.com/releases/patches/patch-release-gitlab-18-0-1-released/)
+- [By W.carter - Own work, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=116915902)
+- [Null](https://www.reddit.com/r/ProgrammerHumor/comments/q6fe8i/shoutout_to_all_the_null_pointers_just_doing/)
