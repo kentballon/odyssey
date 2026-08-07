@@ -125,7 +125,7 @@ curl --request POST \
 {"id":21,"description":null,"name":"remote-project","name_with_namespace":"gdk_user_01 / remote-project","path":"remote-project","path_with_namespace":"gdk_user_01/remote-project","created_at":"2022-02-18T02:27:47.052Z","import_status":"scheduled","import_type":"gitlab_project","correlation_id":"01FW5AG7YWZQT9CMRDZTWXR741","failed_relations":[],"import_error":null,"stats":null}
 ```
 
-I opened an issue [#353045](https://gitlab.com/gitlab-org/gitlab/-/work_items/353045) and followed with the fix under [!80885](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/80885).
+I opened an issue [353045](https://gitlab.com/gitlab-org/gitlab/-/work_items/353045) and followed with the fix under [80885](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/80885).
 We were able to merge this without any hiccups as no application code depended on the old limit.
 
 Sometimes the whole investigation really is just: read the error
@@ -136,5 +136,5 @@ number was chosen in the first place.
 
 - [#353045 — Import file from object storage fails if URL length exceeds 512](https://gitlab.com/gitlab-org/gitlab/-/work_items/353045)
 - [!80885 — Increase remote import URL character length limit from 512 to 2048](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/80885)
-- [Import a file from a remote object storage](https://docs.gitlab.com/ee/api/project_import_export.html#import-a-file-from-a-remote-object-storage)
-- [SigV4 query string authentication](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html)
+- [Import a project from a remote archive](httphttps://docs.gitlab.com/api/project_import_export/#import-a-project-from-a-remote-archive)
+- [pre-signed URLs](https://stackoverflow.com/questions/70975517/aws-s3-signed-url-length-max)
