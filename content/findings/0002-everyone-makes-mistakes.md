@@ -17,6 +17,8 @@ and working with other Support Engineers to validate the behavior,
 we established that the vulnerability actually affected all authentication mechanisms, 
 not just the two called out in the original post.
 
+<img src="https://media1.tenor.com/m/cr2cm7kO7FQAAAAC/the-shining-creepy.gif" alt="Johnny" style="width:100%; height:auto;">
+
 ## Context
 
 The advisory's account-takeover issue centered on a password reset flow. 

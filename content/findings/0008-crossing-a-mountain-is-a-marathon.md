@@ -31,6 +31,8 @@ were very cautious of certain items and we had to provide better context to addr
 
 It took us another 3 months of having close guidance for all activities (that's us having weekly calls to go through the steps ensuring nothing will break). I'd like to think being stubborn enough to endure such cases made me better.
 
+<img src="https://media1.tenor.com/m/3zP3GPHiPA4AAAAC/hahaha-run.gif" alt="Run Forrest Run" style="width:100%; height:auto;">
+
 Long story short, they were able to successfully migrate and overcome all technical issues earlier and continue to be a happy customer. I did in fact receive recognition and [discretionary bonus](https://handbook.gitlab.com/handbook/total-rewards/incentives/#discretionary-bonuses) for the stint so I guess a win is a win.
 
 ## References

@@ -54,6 +54,7 @@ With the increased adoption, we later extended this to other on-call rotations. 
 - [RFC: Implement @cmoc-next, @dedicated-cmoc-next, and @support-manager-oncall-next handles](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7212)
 - [Slack handle trial: @cmoc-next, @dedicated-cmoc-next, and @support-manager-oncall-next](https://gitlab.com/gitlab-com/support/support-team-meta/-/work_items/7228)
 
+<img src="https://media1.tenor.com/m/UYa7K8eCEsAAAAAC/knowledge.gif" alt="If it works" style="width:100%; height:auto;">
 
 ## References
 

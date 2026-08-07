@@ -12,6 +12,8 @@ tags: ["internal tooling","emergency","slack"]
 I had the privilege of being promoted to a `Maintainer` to one of our most widely used
 internal tooling after contributing a couple of features and acting as regular reviewer.
 
+<img src="https://media1.tenor.com/m/o8gSfsEC6LUAAAAC/achievement-unlocked.gif" alt="Achievement unlocked" style="width:100%; height:auto;">
+
 ## Context
 
 Keeping track of all your work shouldn't add extra load to your plate.

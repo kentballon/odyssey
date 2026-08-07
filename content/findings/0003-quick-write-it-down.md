@@ -13,7 +13,7 @@ As part of formalizing GitLab's [Knowledge Base](https://gitlab.com/gitlab-com/s
 I joined the team that spearheaded this initiative and helped write articles for 
 emerging customer issues that were not yet covered by our existing documentation.
 
-<img src="https://handbook.gitlab.com/images/support/assets/km_graphic.jpg" alt="Knowledge Base" style="width:100%; height:auto;">
+<img src="https://media1.tenor.com/m/FQBBwrJKlh4AAAAC/dodgeball-knowledge.gif" alt="Knowledge Base" style="width:100%; height:auto;">
 
 ## Context
 
