@@ -27,6 +27,8 @@ hadn't fully caught up to that intent: some views and permission checks
 still treated auditor users inconsistently, which meant the role didn't 
 always behave the way compliance-focused customers expected.
 
+<img src="https://media1.tenor.com/m/Ay19-AbBCfIAAAAC/hangover-math.gif" alt="Bar Joke" style="width:100%; height:auto;">
+
 ## Details
 
 I sifted through a series of related issues and worked through them, 
